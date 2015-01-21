@@ -20,9 +20,22 @@
         .navborder{
           background-color:#f2f7e1;
           border-top: 6px solid blue;
-
-
         }             
+        .arrow{width: 0px;
+               height: 0;
+
+               border-left: 20px solid transparent;
+               border-right: 20px solid transparent;
+               border-top: 20px solid #bdd467;
+             }
+         .rec{width: 250px;
+              height: 25px;
+              background: #bdd467;} 
+          .headd{width: 100%;
+                 height: 100%;
+                 background: url(image_homebanner@1x.png)no-repeat scroll center center / cover transparent;
+                 position: relative;
+                 display: table;}       
        </style>      
      
       <meta charset="UTF-8">
@@ -54,19 +67,23 @@
    			</div>
    		</div>
    	</nav>
-    <header>
+    <header class="headd">
+     <div class="text-center">
+      <h1>haiiiiiidadfsd dsf ssd df d  </h1>
+     </div>
+    </header>
+    <!--header>
       <div class="down">
       <div class="container text-center">
         
-          <!--img src="image_homebanner@1x.png" class="img-responsive"-->
-        <div class="row">
+                  <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <h1>GREYSCALE Read real life stories and see how they are using life insurance</h1>
            </div>
          </div>
        </div>
        </div>
-      </header>      
+      </header-->      
    	<!--div class="image">
    <div id="mycarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -85,6 +102,10 @@
         </div>
        </div>
    	</div-->
+   <div class="container">
+    <div class="rec" align="center"></div>
+    <div class="arrow"></div>
+   </div> 
    	
    	<script src="js/jquery.js"></script>
       <script src="js/bootstrap.min.js"></script>
