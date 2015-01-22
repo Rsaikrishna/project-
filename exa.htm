@@ -1,13 +1,39 @@
 <html>
+<head>
+<style>
+#container {
+    position: relative;
+    display: inline-block;
+    border: 1px solid green;
+}
+#container * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#image {
+    z-index: 9;
+    text-align: center;
+    border: 1px solid blue;
+}
+#play {
+    background: url('icon_goals@1x.png') center center no-repeat;
+    margin: -240px 10px 0 0;
+    height: 140px;
+    position: relative;
+    z-index: 10;
+}
+</style>
+</head>
 <body>
-  <div class="container"background:url()>
-    <div style="z-index:2;">
-    <img src="image_homebanner@1x.png"class="img-responsive">
-  </div>
-  <div style="z-index:1;top:-80;"class="text-center">
-    <h1>haiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</h1>
-   </div> 
-
-    </div>
+<div id="container">
+  <img id="image" src="image_homevideo1@1x.png">
+  <div id="play"></div>
+</div>
+<div id="container">
+  <img id="image" src="image_homevideo1@1x.png">
+  <div id="play"></div>
+</div>    
+  
  </body>
  </html>   
