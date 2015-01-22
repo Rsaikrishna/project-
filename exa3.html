@@ -2,6 +2,24 @@
    <head>
       <title>Bootstrap 101 Template</title>
       <style>
+      .navbar {
+    width: 100%;
+    margin-bottom: 0px;
+    background: none repeat scroll 0% 0% #FFF;
+        background-color: #FFF;
+        background-image: none;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: 0% 0%;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-size: auto auto;
+    box-shadow: none;
+    border-bottom: 1px solid #D1D1D1;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #D1D1D1;
+}
        .headmenus {color:#A8A9AC;
              font-family: Proxima nova light;
              font-size: 18px;}
@@ -13,7 +31,25 @@
                           color:#64676E;}             
           .footertext{font-family:Proxima Nova Light;
                           font-size: 22px;
-                          color:#AEAFB2;}      
+                          color:#AEAFB2;}   
+           .circle{height: 170px;
+                   width: 170px;
+                  border-radius: 50%;
+                  background-color: red;} 
+            .rec{height:70px;width: 440px;background: red;}
+        .triang {
+               width: 0; 
+               height: 0; 
+                border-left: 26px solid transparent;
+               border-right: 26px solid transparent;
+                border-top: 26px solid #f00;
+                }
+         .zindex {
+    position: absolute;
+
+    
+    z-index: 1;
+}                              
        </style>      
      
       <meta charset="UTF-8">
@@ -24,9 +60,10 @@
    </head>
    <body>
     <!--navigation bar-->
-   	<nav class="navbar navbar-trans navbar-static-top" role="navigation">
+    <!--div class="sticky-wrapper"style="height:80px;">
+   	<nav class="navbar navbar-default navbar-static-top page-top-nav-wrap" role="navigation">
    		<div class="container">
-   			<div class="navbar header">
+   			<div class="navbar-header">
    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -36,7 +73,7 @@
    		    </div>	
    			<div class="collapse navbar-collapse navbar-right" id="myNavbar">
    				
-   				<ul class="nav nav-pills">
+   				<ul class="nav nav-pills pull-right page-top-nav-out">
    					<li ><a href="#"><font class="headmenus">Why life insurence?</font></a></li>
    					<li><a href="#"><font class="headmenus">Success stories</font></a></li>
    					<li><a href="#"><font class="headmenus">Define your story</font></a></li>
@@ -45,6 +82,44 @@
    			</div>
    		</div>
    	</nav>
+    </div-->
+    
+
+    <!--
+
+     Static navbar 
+
+    -->
+    <div class="navbar navbar-default navbar-static-top active" style="top: 0px;height:100px">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" title="" href="http://logicshore.com">
+                    <img alt="Logicshore" src="logo.png"></img>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav pull-right ">
+            <li ><a href="#"><font class="headmenus">Why life insurence?</font></a></li>
+            <li><a href="#"><font class="headmenus">Success stories</font></a></li>
+            <li><a href="#"><font class="headmenus">Define your story</font></a></li>
+            <li><a href="#"><font class="headmenus">Esteem your needs</font></a></li>
+          </ul>
+            </div>
+            <!--
+
+            <div class="navbar-collapse collapse">
+                        <ul c…
+
+            -->
+        </div>
+    </div>
+
+
     <!-- navigation bar ends-->
     <!--home banner starts-->
    	<!--div class="image">
@@ -62,10 +137,92 @@
         </div>
        </div>
    	</div-->
-    <div class="container"style="background-image:url(image_homebanner@1x.png);">
-      
+    
+<!--div class="row">
+<div class="col-lg-3 col-lg-offset-2"style="display:table-cell; vertical-align:middle;text-align:center;">
+<div class="circle"style="display:table-cell; vertical-align:middle;text-align:center;">
+<img src="icon_goals@1x.png"width="85"height="86">
+</div>
+</div>
+<div class="col-lg-3"style="text-align:center;">
+<div class="circle"style="display:table-cell; vertical-align:middle;text-align:center;">
+<img src="icon_estimate@1x.png"width="99.4"height="67.2">
 
-    </div>
+</div>
+
+</div>
+<div class="col-lg-3">
+<div class="circle"style="display:table-cell; vertical-align:middle;text-align:center;">
+<img src="icon_chooseplan@1x.png"width="74.8"height="62">
+</div>
+</div>
+</div-->
+
+<div class="row">
+<div class="col-lg-10 col-lg-offset-1">
+<div class="row">
+<div class="col-lg-4 text-center">
+<center>
+<div class="circle"style="display:table-cell; vertical-align:middle;text-align:center;">
+<img src="icon_goals@1x.png"width="85"height="86">
+</div>
+<h3>Goals</h3>
+</center>
+</div>
+<div class="col-lg-4 text-center">
+<center>
+<div class="circle"style="display:table-cell; vertical-align:middle;text-align:center;">
+<img src="icon_estimate@1x.png"width="99.4"height="67.2">
+</div>
+<h3>Estimate your needs</h3>
+</center>
+</div>
+<div class="col-lg-4 text-center">
+<center>
+<div class="circle"style="display:table-cell; vertical-align:middle;text-align:center;">
+<img src="icon_chooseplan@1x.png"width="74.8"height="62">
+</div>
+<h3>choose your plans</h3>
+</center>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-lg-4 text-center">
+<div class="rec"></div>
+
+<center>
+
+<div class="triang zindex"style="vertical-align:middle;text-align:center;"></div>
+</center>
+<div class="image">
+<img class="img-responsive" src="image_homevideo1@1x.png"width="480"height="450">
+</div>
+</div>
+
+
+<div class="col-lg-4 text-center">
+
+<div class="rec"></div>
+<center>
+<div class="triang"style="vertical-align:middle;text-align:center;"></div>
+</center>
+</div>
+
+
+<div class="col-lg-4 text-center">
+<div class="rec"></div>
+<center>
+<div class="triang"style="vertical-align:middle;text-align:center;"></div>
+</center>
+</div>
+</div>
+
+
+
     <script src="js/jquery.js"></script>
       <script src="js/bootstrap.min.js"></script>
    	</body>
