@@ -1,6 +1,7 @@
 <html>
    <head>
       <title>Bootstrap 101 Template</title>
+      <link href="css/bootstrap.css" rel="stylesheet">
 
       <style>
       .video{
@@ -153,12 +154,12 @@ background-image: -moz-linear-gradient( rgba(74,144,226, 0.40) 100%, rgba(0, 0, 
                   border-radius: 50%;
                   background-color: #bdd467;} 
             .rec{height:70px;width: 440px;background: red;}
-        .triang {
+        .triang3 {
                width: 0; 
                height: 0; 
                 border-left: 26px solid transparent;
                border-right: 26px solid transparent;
-                border-top: 26px solid #f00;
+                border-top: 26px solid #bdd467;
                 }            
            
          
@@ -173,21 +174,36 @@ background-image: -moz-linear-gradient( rgba(74,144,226, 0.40) 100%, rgba(0, 0, 
              color:white;
              }
                    }
+     .grad{background: -webkit-linear-gradient(#d1e978,#BDD467); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#d1e978,#BDD467); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#d1e978,#BDD467); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#d1e978,#BDD467);
+      height:73px;
+        width:293px;
+        font-size: 22px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right:35px;
+        padding-left:35px;
+
+        color:#ffffff;
+        display: inline;}
+
       .btn-default
       {
         background: -webkit-linear-gradient(#d1e978,#BDD467); /* For Safari 5.1 to 6.0 */
         background: -o-linear-gradient(#d1e978,#BDD467); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(#d1e978,#BDD467); /* For Firefox 3.6 to 15 */
         background: linear-gradient(#d1e978,#BDD467);
-      background-image: linear-gradient(top bottom, #d1e978, #bdd467);
+      
         
         height:73px;
         width:293px;
         font-size: 22px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-right:50px;
-        padding-left:50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right:35px;
+        padding-left:35px;
 
         color:#ffffff;
         display: inline;
@@ -196,7 +212,7 @@ background-image: -moz-linear-gradient( rgba(74,144,226, 0.40) 100%, rgba(0, 0, 
       .btn:hover
       {
 box-shadow: 1px 1px 7px #000000;
-opacity: 50%;
+opacity: 0.7;
       }
       .btn:focus
       {
@@ -205,15 +221,17 @@ opacity: 50%;
         background: -moz-linear-gradient(#bdd467,#d1e978); /* For Firefox 3.6 to 15 */
         background: linear-gradient(#bdd467,#d1e978);
         box-shadow: 1px 1px 7px #000000;
+        opacity: 0.5;
       
       }
          .toptitles1
       {
-        
+        font-family: "lucida Grande";
         color: #A8A9AC;
         line-height: 21px;
         font-size:  18px;
-        padding-right:5px;
+        padding-right:10px;
+        padding-left:10px;
 
       }   
       .active
@@ -269,10 +287,10 @@ opacity: 50%;
           </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1"style="margin-right:50px;">
+         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1"style="margin-right:0px;">
          <ul class="nav navbar-nav" id="Navigation">
           <li><a href="index.html"><font class="toptitles1">Why Life Insurance?</font></a></li>
-          <li><a href="sureify_success.html"class="active"style="padding-bottom:6px;"><font class="toptitles1">Success Stories</font></a></li>
+          <li><a href="sureify_success.html"class="active"style="padding-bottom:6px;padding-left:2px;padding-right:2px;"><font class="toptitles1">Success Stories</font></a></li>
           <li><a href="#" ><font class="toptitles1">Define Your Story</font></a></li>
           <li><a href="estimate.html"><font class="toptitles1">Estimate Your Needs</font></a></li></ul>
          </div>
@@ -300,11 +318,25 @@ opacity: 50%;
                 <p  class="text-left ff"style="color:#A8A9AC;font-size:22px;line-height:26px;"> We'll break it down and make it easy to understand.</p>
           </div>
           <div class=" col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4"><br><br>
-           <a class="btn btn-default"style="padding-top:20px;padding-bottom:20px;vertical-align:middle;padding-right:50px;padding-left:50px;background-color:#bdd467;" id="but" href="#" role="button"><font class="ff"style="color:#ffffff;font-size:22px; padding-top:24px;padding-bottom:24px;vertical-align:middle;">Talk to an advisor</font></a>
+                      <a class="btn btn-default"style="padding-top:20px;padding-bottom:20px;vertical-align:middle;padding-right:45px;padding-left:45px;background-color:#d1e978;" id="but" href="#" role="button"><font class="ff"style="color:#ffffff;font-size:22px; padding-top:24px;padding-bottom:24px;vertical-align:middle;">Talk to an advisor</font></a>
             </div>
            </div>
          </div>
    </div>
+    <!--div class="jumbotron" style="margin-bottom:0px;background-color:#FFFFFF">
+      <div class="container-fluid">
+        <div class="row">
+           <div class="col-md-offset-1 col-md-7 text-left">
+                <h2 style="color:#BDD467;font-size:35px;line-height:43px;"> What chapter of your life story are you at?</h2>
+                <p style="color:#A8A9AC;font-size:22px;line-height:26px;"> We'll show you what life insurance can do for you.</p>
+          </div>
+          <div class="col-md-4">
+          <div class="row"><br><br></div>
+           <a class="btn btn-default" id="but" href="#" role="button"><span style="color:#ffffff; padding-top:24px;padding-bottom:24px;">Talk to an advisor</span></a>
+            </div>
+           </div>
+         </div>
+   </div-->
   <!--ends-->
   <!--video image-->
   <div class="container-fluid">
@@ -352,7 +384,7 @@ opacity: 50%;
 
  <div class="col-md-8 col-lg-8 col-sm-8 col-xs-8 "style="border:3px solid #bdd467;padding-top:10px;">
  <center>
- <p class="ff"style="font-size:22px;color:#a8a9ac;">Lorem ipsum dolor sit amet,consectetur adipiscing elit. Pellentesque neque libero,molestie a pulvinar id, vulputate nec mi. Pellentesque sed sapien justo.
+ <p class="ff"style="font-size:22px;color:#a8a9ac;">Lorem ipsum dolor sit amet,consectetur adipiscing elit. Pellentesque neque libero,molestie a pulvinar id, vulputate nec mi. Pellentesque sed sapien justo.<br>
   Doonec a lacus a justo placerat pulvinar. In in dui in odio tempus.</p>
  </center>
  </div>
@@ -372,15 +404,17 @@ opacity: 50%;
 <div class="row text-center"style="padding-bottom:10px;padding-top:10px;background-color:#bdd467">
 <font class="ff"style="padding-bottom:20px;font-size:35px;color:white;line-height:41px;">Other Stories</font>
 </div>
+  <!--div class="triang3 center-block"style="z-index:1;"></div-->
   <div class="row">
-  <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 tile1"style="padding-right:0px;padding-left:0px;">
+
+  <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 tile1"style="z-index:0;padding-right:0px;padding-left:0px;">
   <div id="banner2"class="text-vertical-center">
   <font class="ff"style="font-size:32px;padding-top:80px;padding-bottom:80px;color:white;">Recent Graduate</font>
   </div>
 
 
   </div>
-  <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 tile2 text-center"style="padding-right:0px;padding-left:0px;">
+  <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 tile2 text-center"style="z-index:0;padding-right:0px;padding-left:0px;">
   <div id="banner2"class="text-vertical-center">
   <font class="ff"style="font-size:32px;padding-top:80px;padding-bottom:80px;color:white;">The New Parents</font>
   </div>
