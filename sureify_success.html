@@ -5,16 +5,18 @@
 
       <style>
       #blur-me {
-  filter: blur(23px);
-  -webkit-filter: blur(2px); 
-    -moz-filter: blur(2px); 
-
+  filter: blur(5px);
+// Browser Specific
+-webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
 }
       .video{
         display: table;
     position: relative;
     width: 100%;
-    height: 540px;
+    height: 500px;
     background: url(img/image_videobaby@1x.png) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -109,7 +111,7 @@ background-image: -moz-linear-gradient( rgba(74,144,226, 0.40) 100%, rgba(0, 0, 
     -o-background-size: cover;
 }
 .tile4 {
-    display: table;
+     display: table;
     position: relative;
     width: 100%;
     height: 165px;
@@ -125,8 +127,10 @@ background-image: -moz-linear-gradient( rgba(74,144,226, 0.40) 100%, rgba(0, 0, 
     vertical-align: middle;
     }
        .heade {
+    /*
     display: table;
     position: relative;
+    width: 100%;
     height: 240px;
     background: url('img/image_storiesheader@1x.png') no-repeat scroll center center / cover ;
         background-color: transparent;
@@ -137,8 +141,17 @@ background-image: -moz-linear-gradient( rgba(74,144,226, 0.40) 100%, rgba(0, 0, 
         background-clip: border-box;
         background-origin: padding-box;
         background-size: cover;
-        opacity:0.95;
+        opacity:0.95;*/
+        display: table;
+    position: relative;
     width: 100%;
+    height: 200px;
+    background: url(img/image_storiesheader@1x.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    
 }
        .headmenus {color:#A8A9AC;
              
@@ -170,6 +183,8 @@ background-image: -moz-linear-gradient( rgba(74,144,226, 0.40) 100%, rgba(0, 0, 
                border-right: 26px solid transparent;
                 border-top: 26px solid #bdd467;
                 z-index:2;
+
+
                 }            
            
          
@@ -248,7 +263,32 @@ opacity: 0.9;
       .active
      {  border-bottom: 2px solid #bdd467; 
         
-     }                          
+     } 
+     .play-image
+     {
+        margin-top:23%;
+        border:4px solid red;
+        border-radius: 50px;
+     }
+     /*.bottomtrianlge
+      {
+        position:absolute;
+        margin-left:45%;
+      }*/
+      @media (max-width: 767px)
+       {
+        .bottomtriangle
+          {
+            margin-left: 20%;
+             position:absolute;
+
+          }
+     
+       }
+
+      .til{margin-bottom: 20px;margin-top: 20px;}
+
+
        </style>      
      
       <meta charset="UTF-8">
@@ -260,31 +300,7 @@ opacity: 0.9;
    </head>
    <body>
    <!--navigation-->
-   <!--nav class="navbar navbar-default navbar-static-top" style="border-bottom:3px solid #bdd467;margin-bottom:0px;"role="navigation">
-      <div class="container">
-      <a class="navbar-brand " href="#my"><img src="img/logo.png" class="img-responsive" height="55"width="145"></a>
-        <div class="navbar header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                                      
-                </button>
-        
-          <br>
-        <div class="collapse navbar-collapse navbar-right " id="bs-example-navbar-collapse-1">
-          
-          <ul class="nav navbar-nav">
-
-            <li ><a href="#my"><font class="headmenus ff">Why Life Insurance?</font></a></li>
-            <li class="active1" ><a href="#"><font class="headmenus ff">Success Stories</font></a></li>
-            <li ><a href="#"><font class="headmenus ff">Define Your Story</font></a></li>
-            <li ><a href="#"><font class="headmenus ff">Estimate Your Needs</font></a></li>
-          </ul>
-        </div>
-        </div>  
-      </div>
-    </nav-->
+   
     <nav class="navbar navbar-default" role="navigation" style="margin-bottom:0px;border-bottom:3px solid #BDD467;background-color:#ffffff;padding-top:5px;padding-bottom:5px;" >
         <div class="container" style="padding-top:15px;padding-bottom:15px;">
               <a class="navbar-brand" style="padding:0px;margin-left:60px;" href="#"><img src="img/logo.png" class="img-responsive">
@@ -302,7 +318,7 @@ opacity: 0.9;
          <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1"style="margin-right:50px;">
          <ul class="nav navbar-nav" id="Navigation">
           <li><a href="index.html"><font class="toptitles1"style="padding-right:20px;">Why Life Insurance?</font></a></li>
-          <li><a href="sureify_success.html"class="active" style="padding-bottom:3px;padding-right:2px;padding-left:4px;"><font class="toptitles1" >Success Stories</font></a></li>
+          <li><a href="sureify_success.html"class="active" style="padding-bottom:3px;padding-right:2px;padding-left:5px;"><font class="toptitles1" >Success Stories</font></a></li>
           <li><a href="#"><font class="toptitles1"style="padding-left:20px;">Define Your Story</font></a></li>
           <li><a href="estimate.html"><font class="toptitles1" >Estimate Your Needs</font></a></li></ul>
          </div>
@@ -313,11 +329,11 @@ opacity: 0.9;
 <!--home banner-->
     
          <header id="top"class="heade">
-    <div id="banner"class="text-vertical-center">
-    <font class="ff" style="font-size: 65px;color:white;">Ben & Jess</font><br>
+    <div id="banner"class="text-vertical-center"style="padding-top:10px;">
+    <font class="ff" style="font-size: 65px;color:white;line-height:77px;">Ben & Jess</font><br>
            
            
-           <font class="ff"style="font-size: 22px;color:white;font-weight:normal !important;">The New Parents</font>
+           <font class="ff"style="font-size: 22px;color:white;font-weight:normal !important;padding-bottom:10px;">The New Parents</font>
    </div>
   </header> 
   <!--home banner ends-->
@@ -329,7 +345,7 @@ opacity: 0.9;
                 <h2 class="text-left ff"style="color:#BDD467;font-size:35px;line-height:41px;"> Find out life insurance can benefit you.</h2>
                 <p  class="text-left ff"style="color:#A8A9AC;font-size:22px;line-height:26px;"> We'll break it down and make it easy to understand.</p>
           </div>
-          <div class=" col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4"><br><br>
+          <div class=" col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4"><br>
                       <a class="btn btn-default"style="background: -moz-linear-gradient(#d1e978,#BDD467);padding-top:20px;padding-bottom:20px;vertical-align:middle;padding-right:45px;padding-left:45px;" id="but" href="#" role="button"><font class="ff"style="color:#ffffff;font-size:22px; padding-top:24px;padding-bottom:24px;vertical-align:middle;">Talk to an advisor</font></a>
             </div>
            </div>
@@ -358,28 +374,28 @@ opacity: 0.9;
 <div class="row"style="background-color:e4e4e4;">
 <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"style="padding-right:0px;padding-left:0px;"></div>
 <div class="col-md-8 col-lg-8 col-sm-8 col-xs-8"style="padding-right:0px;padding-left:0px;">
-<div class="video"style="margin-top:-30px;border:2px solid #e4e4e4;">
-<div id=""class="image text-center"style="">
+<div class="video"style="margin-top:-40px;border:2px solid #e4e4e4;">
+<div id=""class="row image text-center"style="padding-top:210px;padding-bottom:125px;">
       
-        <img id="blur-me"src="img/icon_playbutton1@1x.png"class="center-block img-responsive"style="padding-top:210px;padding-bottom:125px;">
+        <img src="img/icon_playbutton1@1x.png"class="center-block img-responsive ">
       </div>
 <div class="container-fluid">
 <div class="row ply"style="border-right:3px solid #e4e4e4;">
  <div class="col-md-1 col-lg-1 col-sm-1 col-xs-3">
-  <img src="img/play.png"class=" img-responsive"style="padding-top:10px;padding-bottom:10px;">
+  <img src="img/play.png"class=" img-responsive"style="padding-top:15px;padding-bottom:15px;">
   </div>
-  <div class="col-md-1 col-lg-1 col-sm-1 col-xs-3">
-  <img src="img/vol.png"class="img-responsive"style="padding-top:10px;padding-bottom:10px;">
+  <div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"style="padding-left:0px;">
+  <img src="img/vol.png"class="img-responsive"style="padding-top:15px;padding-bottom:15px;">
   </div>
-  <div class="col-md-9 col-lg-9 col-sm-9 col-xs-3"style="padding-top:20px;">
-    <div class="progress"style="height:10px;">
+  <div class="col-md-9 col-lg-9 col-sm-9 col-xs-3"style="padding-top:25px;padding-left:0px;">
+    <div class="progress"style="height:8px;">
   <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;background-color:#bdd467;">
     <span class="sr-only">60% Complete (success)</span>
   </div>
 </div>
   </div>
   <div class="col-md-1 col-lg-1 col-sm-1 col-xs-3">
-  <img src="img/expand.png"class="img-responsive"style="padding-top:10px;padding-bottom:10px;">
+  <img src="img/expand.png"class="img-responsive"style="padding-top:15px;padding-bottom:15px;">
   </div>
 </div>
 </div>
@@ -391,16 +407,16 @@ opacity: 0.9;
 
 
 <!--box-->
-<br><br>
-<div class="container-fluid">
+<br>
+<div class="container-fluid"style="padding-top:8px;">
 <div class="row"style="background-color:e4e4e4;">
  <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
  </div>
 
  <div class="col-md-8 col-lg-8 col-sm-8 col-xs-8 "style="border:3px solid #bdd467;padding-top:10px;margin-bottom:-50px;background-color:white;">
  <center>
- <p class="ff"style="font-size:22px;color:#a8a9ac;">Lorem ipsum dolor sit amet,consectetur adipiscing elit. Pellentesque neque libero,molestie a pulvinar id, vulputate nec mi. Pellentesque sed sapien justo.<br>
-  Doonec a lacus a justo placerat pulvinar. In in dui in odio tempus.</p>
+ <p class="ff"style="font-size:22px;color:#a8a9ac;line-height:26px;padding-top:10px;padding-bottom:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque neque <br>libero, molestie a pulvinar id, vulputate nec mi. Pellentesque sed sapien justo. <br>
+  Donec a lacus a justo placerat pulvinar. In in dui in odio tempus.</p>
  </center>
  </div>
  <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
@@ -411,9 +427,9 @@ opacity: 0.9;
 <!--ends-->
 <!--grid images-->
 <!--grid images-->
-<br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
 
-<div class="container-fluid">
+<div class="container-fluid"style="padding-top:3px;">
 <div class="row">
 <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"style="padding-right:0px;padding-left:0px;"></div>
 <div class="col-md-8 col-lg-8 col-sm-8 col-xs-8">
@@ -421,7 +437,8 @@ opacity: 0.9;
 <font class="ff"style="padding-bottom:20px;font-size:35px;color:white;line-height:41px;">Other Stories</font>
 
 </div>
-<div class="triang3 center-block"style="position:absolute;margin-left:45%;"></div>  
+<div class="bottomtriangle triang3 center-block  "id=""style="position:absolute;
+        margin-left:45%;"></div>  
   <div class="row"style="z-index:1;">
   
   <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 tile1"style="z-index:0;padding-right:0px;padding-left:0px;">
@@ -438,14 +455,14 @@ opacity: 0.9;
   </div>
   </div>
   <div class="row">
-    <div class="col-md-4 col-sm-4 col-lg-4 tile3 text-center"style="padding-right:0px;padding-left:0px;">
+    <div class="col-md-3 col-sm-3 col-lg-3 tile3 text-center"style="padding-right:0px;padding-left:0px;">
      <div id="banner3"class="text-vertical-center">
   <font class="ff"style="font-size:32px;padding-top:80px;padding-bottom:80px;color:white;">New Job</font>
   </div>
      </div>
-     <div class="col-md-8 col-sm-8 col-lg-8 tile4 text-center"style="padding-right:0px;padding-left:0px;">
-     <div id="banner4"class="text-vertical-center">
-  <font class="ff"style="font-size:32px;padding-top:80px;padding-bottom:80px;color:white;">Buying a House</font>
+     <div class="col-md-9 col-sm-9 col-lg-9 tile4 text-center"style="padding-right:0px;padding-left:0px;">
+     <div id="banner4" class="text-vertical-center">
+   <font class="ff"style="font-size:32px;padding-top:80px;padding-bottom:80px;color:white;">Buying a House</font>
   </div>
      </div>
 </div>
